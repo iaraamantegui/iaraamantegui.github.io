@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
+// Placeholder for potential interactivity
+console.log("Orchid Showcase Website Loaded.");
+console.log("Intro section:", document.querySelector(".intro"));
 
-    menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("show");
-    });
-});
+function toggleAnswer(index) {
+    const answer = document.getElementById(`answer-${index}`);
+    const isVisible = answer.style.display === 'block';
+    answer.style.display = isVisible ? 'none' : 'block';
+}

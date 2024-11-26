@@ -1,102 +1,204 @@
-/* General Styles */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+
+body {
+   
+    background-color: rgb(145, 176, 145);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
+    background-color: rgb(145, 176, 145);
+    text-align: center;
+    padding: 1.5rem 0;
 }
 
-.responsive-nav {
+.hero {
+    background: url('../images/hero.png') no-repeat center center/cover;
+    height: 60vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10rem; /* Adjust this value to add more space */
+    padding-top: 10rem;
 }
 
-.logo {
-    font-size: 1.5rem;
+.hero h2 {
+    font-family: "Playwrite HR Lijeva", cursive;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for a light look */
+    color: rgb(77, 102, 77); /* Matching color from the design */
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem; /* Adds space between the intro and the first orchid item */
+    border-radius: 5px; /* Matches the rounded corners from the orchid items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.intro h2 {
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-size: 2.5rem;
+    color: rgb(77, 102, 77);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(77, 102, 77);
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem; /* Added space between hero and orchid containers */
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgb(77, 102, 77)cc;
+    border-radius: 15px;
+    padding: 2rem 10rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item .images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0; /* Adjusted spacing */
+}
+
+.item img {
+    width: 350px; /* Increased image size */
+    height: 350px; /* Increased image size */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-size: 23px;
+}
+
+.model-viewer {
+    margin: 3rem 0; /* Added space for better balance */
+    height: 300px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #888;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#faq {
+    margin: 0 100px;  /* Keeps the left and right margins */
+    margin-bottom: 50px;  /* Add more space below the FAQ section */
+}
+
+#faq h2 {
+    text-align: center;
+    font-family: "Playwrite HR Lijeva", cursive;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#faq .faq-question {
     font-weight: bold;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+#faq .faq-question, #faq .faq-answer {
+    font-family: 'Quicksand', sans-serif;
 }
 
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
-}
-
-.menu li a:hover {
-    background: #555;
-    border-radius: 5px;
-}
-
-.menu-toggle {
+.faq-answer {
     display: none;
-    background: none;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #f5f5f5;
     border: none;
-    color: white;
-    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.horizontal-scroll {
-    overflow-x: auto;
-    padding: 2rem 1rem;
-    background: #f4f4f4;
+.faq-item {
+    margin-bottom: 10px;
 }
 
-.scroll-container {
-    display: flex;
-    gap: 1rem;
-}
-
-.card {
-    min-width: 200px;
-    height: 150px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    border-radius: 5px;
+/* Adjust Footer padding to add space from FAQ section */
+footer {
+    background-color: rgb(145, 176, 145);
+    color: white;
     text-align: center;
     padding: 1rem;
+    padding-top: 50px;  /* Add space at the top of the footer */
 }
 
-/* Responsive Design */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0073e6;
+}
+
+
 @media (max-width: 768px) {
-    .menu {
-        display: none;
+    .item .images {
         flex-direction: column;
-        background: #333;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        padding: 1rem;
+        align-items: center;
     }
-
-    .menu.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
+    .item img {
+        width: 150px;
+        height: 150px; /* Adjusted smaller images for smaller screens */
     }
 }
