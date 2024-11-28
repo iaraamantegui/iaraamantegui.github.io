@@ -6,6 +6,7 @@
     <title>Orchid Showcase</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
@@ -50,7 +51,13 @@
                 <img src="images/blue-vanda2.png" alt="Blue Vanda Image 2">
                 <img src="images/blue-vanda3.png" alt="Blue Vanda Image 3">
             </div>
-            <div class="model-viewer">3D Model Placeholder</div>
+            
+            <div class="model-viewer"> <model-viewer src="models/3d-blue-orchid.glb"
+                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                alt="A 3D model of Blue Vanda Orchid"
+                ar
+                auto-rotate
+                camera-controls></model-viewer></div>
         </div>
 
         <!-- The White Nun -->
