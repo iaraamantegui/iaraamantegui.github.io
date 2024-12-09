@@ -52,13 +52,43 @@
                 <img src="images/blue-vanda3.png" alt="Blue Vanda Image 3">
             </div>
             
-            <div class="model-viewer"> 
-                <model-viewer src="models/3d-blue-orchid.glb"
-                poster="./images/Poster-BlueV.png"
-                alt="A 3D model of Blue Vanda Orchid"
-                ar
-                auto-rotate
-                camera-controls></model-viewer></div>
+            <div class="model-viewer-container">
+                <div class="model-section">
+                    <model-viewer src="models/3d-blue-orchid.glb"
+                        poster="./images/Poster-BlueV.png"
+                        alt="A 3D model of Blue Vanda Orchid"
+                        ar
+                        auto-rotate
+                        camera-controls>
+                        <button class="Hotspot" slot="hotspot-1" data-position="1.2206517707580582m 0.5682435624397199m 0.16024419765096898m" data-normal="0.5435998424874993m -0.22887125649165613m 0.8075377137939109m" data-visibility-attribute="visible"
+                        data-title="About the Flowers" data-info="Known for its rare violet-blue blooms with intricate purple tessellations, this orchid's flowers are a collector's delight and bloom during the fall season.">
+                            <div class="HotspotAnnotation">Flower</div>
+                        </button>
+
+                        <button class="Hotspot" slot="hotspot-2" data-position="1.0388366934136128m 0.40777879207527423m -0.08779281646228032m" data-normal="0.425431445326442m -0.4278798839379481m 0.7974502431178404m" data-visibility-attribute="visible"
+                        data-title="About the Leaves" data-info="The long, strap-shaped leaves are medium green, which is ideal for their health. Dark green leaves signal a need for more sunlight to ensure vigorous growth and blooms.">
+                            <div class="HotspotAnnotation">Leaves</div>
+                        </button>
+
+                        <button class="Hotspot" slot="hotspot-3" data-position="1.0817201457545575m 0.16862697439155172m -0.05574527636381932m" data-normal="0.21785647403664907m 0.07362304099147783m 0.9731999817897071m" data-visibility-attribute="visible"
+                        data-title="About the Roots" data-info="The aerial roots are thick and spongy, requiring heavy watering during growth. They absorb moisture and nutrients efficiently in high humidity, mimicking the orchid's natural woodland habitat.">
+                            <div class="HotspotAnnotation">Roots</div>
+                        </button>
+      
+
+                    </model-viewer>
+                </div>
+                <div class="info-panel white-nun-info-panel">
+                    <div class="default-message">
+                        <h3>Interactive 3D Model</h3>
+                        <p>Click the buttons on the model to learn more about different parts of the orchid.</p>
+                    </div>
+                    <div class="hotspot-content" style="display: none;">
+                        <h3 class="hotspot-title"></h3>
+                        <p class="hotspot-text"></p>
+                    </div>
+                </div>
+            </div>
             </div>
 
         <!-- The White Nun -->
@@ -75,13 +105,36 @@
                 <img src="images/white-nun2.png" alt="White Nun Image 2">
                 <img src="images/white-nun3.png" alt="White Nun Image 3">
             </div>
-            <div class="model-viewer"> 
-                <model-viewer src="models/3d_lyncaste.glb"
-                poster="./images/Poster-Lycaste.png"
-                alt="A 3D model of Lycaste Virginalis"
-                ar
-                auto-rotate
-                camera-controls></model-viewer></div>
+            <div class="model-viewer-container">
+                <div class="model-section">
+                    <model-viewer src="models/3d_lyncaste.glb"
+                        poster="./images/Poster-Lycaste.png"
+                        alt="A 3D model of Lycaste Virginalis"
+                        ar
+                        auto-rotate
+                        camera-controls>
+                        <button class="Hotspot" slot="hotspot-1" data-position="1.1540506251058185m 0.3129857490834333m 0.011265907891291338m" data-normal="0.47062599725305027m -0.37467082058396334m 0.7988322395299978m" data-visibility-attribute="visible" data-title="About the Flowers" data-info="Snowy white and waxy, these large flowers symbolize peace and beauty. They are Guatemala's national treasure and bloom for several weeks, adding sophistication to any orchid collection.">
+                            <div class="HotspotAnnotation">Flower</div>
+                        </button>
+                        <button class="Hotspot" slot="hotspot-3" data-position="1.2215038604842992m 0.5130038601059471m -0.06294799599739065m" data-normal="-0.623688849468714m 0.18600655152927031m 0.7592191922209164m" data-visibility-attribute="visible" data-title="About the Leaves" data-info="The semi-deciduous leaves are broad and smooth, offering a lush green presence during their growth phase and naturally shedding some leaves in winter.">
+                            <div class="HotspotAnnotation">Leaves</div>
+                        </button>
+                        <button class="Hotspot" slot="hotspot-4" data-position="1.1199077159083946m 0.12402100857877307m -0.0645279472593232m" data-normal="0.10585141558379246m -0.15149566234635198m 0.9827739018254135m" data-visibility-attribute="visible" data-title="About the Roots" data-info="The roots prefer airy, well-draining media like bark and sphagnum moss. They absorb moisture efficiently while thriving in intermediate to cool conditions with high humidity.">
+                            <div class="HotspotAnnotation">Roots</div>
+                        </button>
+                    </model-viewer>
+                </div>
+                <div class="info-panel white-nun-info-panel">
+                    <div class="default-message">
+                        <h3>Interactive 3D Model</h3>
+                        <p>Click the buttons on the model to learn more about different parts of the orchid.</p>
+                    </div>
+                    <div class="hotspot-content" style="display: none;">
+                        <h3 class="hotspot-title"></h3>
+                        <p class="hotspot-text"></p>
+                    </div>
+                </div>
+            </div>
             </div>
 
         <!-- The Queen of the Night -->
@@ -99,15 +152,41 @@
                 <img src="images/queen-night2.png" alt="Queen of the Night Image 2">
                 <img src="images/queen-night3.png" alt="Queen of the Night Image 3">
             </div>
-            <div class="model-viewer"> 
-                <model-viewer src="models/3d-orchid-madelaine.glb"
-                poster="./images/Poster-Madelaine.png"
-                alt="A 3D model of The Queen of nights"
-                ar
-                auto-rotate
-                camera-controls></model-viewer></div>
-            </div>
+            <div class="model-viewer-container">
+                <div class="model-section">
+                    <model-viewer src="models/3d-orchid-madelaine.glb"
+                        poster="./images/Poster-Madelaine.png"
+                        alt="A 3D model of The Queen of nights"
+                        ar
+                        auto-rotate
+                        camera-controls>
 
+
+                        <button class="Hotspot" slot="hotspot-2" data-position="-0.04927066825740101m 0.3033355550108132m -0.3054774790256848m" data-normal="-0.9234546830645183m 0.34548105922780925m 0.16695594041854642m" data-visibility-attribute="visible" data-title="About the Flowers" data-info="The large, white, 3-4 inch flowers exude a spicy jasmine fragrance that intensifies at night, lasting up to 6 weeks. These blooms are symbols of elegance and romance, adding a mystical touch to your orchid collection.">
+                            <div class="HotspotAnnotation">Flower</div>
+                        </button>
+                        <button class="Hotspot" slot="hotspot-1" data-position="-0.25671752422477034m 0.4564187831909892m -0.5431472327720427m" data-normal="0.38028871734754915m 0.7468104189110638m 0.5455773910858454m" data-visibility-attribute="visible"data-title="About the Leaves" data-info="The thick, strap-like leaves are leathery and dark green, helping the plant store moisture and withstand its natural cool, rocky environment.">
+                            <div class="HotspotAnnotation">Leaves</div>
+                        </button>
+                        <button class="Hotspot" slot="hotspot-3" data-position="-0.044155958890414015m 0.14570975703480954m -0.43150827029147176m" data-normal="0.24812734655498295m 0.9365785324776376m 0.24749438861036507m" data-visibility-attribute="visible"data-title="About the Roots" data-info="The roots are robust and thrive in well-draining media like clay pots, staying cool while absorbing nutrients from nutritious debris, mimicking the orchid's natural habitat on boulders.">
+                            <div class="HotspotAnnotation">Roots</div>
+                        </button>
+
+
+                    </model-viewer>
+                </div>
+                <div class="info-panel white-nun-info-panel">
+                    <div class="default-message">
+                        <h3>Interactive 3D Model</h3>
+                        <p>Click the buttons on the model to learn more about different parts of the orchid.</p>
+                    </div>
+                    <div class="hotspot-content" style="display: none;">
+                        <h3 class="hotspot-title"></h3>
+                        <p class="hotspot-text"></p>
+                    </div>
+                </div>
+            </div>
+            </div>
     </section>
 
     <section id="faq">
